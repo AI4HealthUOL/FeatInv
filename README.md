@@ -1,8 +1,8 @@
 # FeatInv: Spatially resolved mapping from feature space to input space using conditional diffusion models
 
-This is the official repository for the paper: <ins>FeatInv: Spatially resolved mapping from feature space to input space using conditional diffusion models</ins>.
+This is the official repository for the paper: [<ins>FeatInv: Spatially resolved mapping from feature space to input space using conditional diffusion models</ins>](https://arxiv.org/abs/2505.21032).
 
-It is based on [ControlNet](https://github.com/lllyasviel/ControlNet), originally developed by [lllyasviel](https://github.com/lllyasviel/ControlNet/commits?author=lllyasviel). Licensed under the Apache License, Version 2.0. See [CHANGELOG.md](./CHANGELOG.md) for a list of changes and modifications from the original ControlNet project.
+It is based on [ControlNet](https://github.com/lllyasviel/ControlNet), originally developed by [lllyasviel](https://github.com/lllyasviel). Licensed under the Apache License, Version 2.0. See [CHANGELOG.md](./CHANGELOG.md) for a list of changes and modifications from the original ControlNet project.
 
 ---
 
@@ -10,18 +10,26 @@ It is based on [ControlNet](https://github.com/lllyasviel/ControlNet), originall
 
 FeatInv is a method for interpreting deep neural networks by mapping internal feature representations back to input space using a conditional diffusion model. It enables high-fidelity reconstructions from spatially resolved feature maps across a variety of pretrained models (CNNs, ViTs), helping to visualize and understand what networks "see" and how they reason. This supports use cases like concept steering visualization and analysis of composite features in model internals.
 
-For a detailed description of technical details and experimental results, please refer to our paper: <br> Nils Neukirch, Johanna Vielhaben, Nils Strodthoff: _FeatInv: Spatially resolved mapping from feature space to input space using conditional diffusion models_.
+For a detailed description of technical details and experimental results, please refer to our paper: <br> Nils Neukirch, Johanna Vielhaben, Nils Strodthoff: [FeatInv: Spatially resolved mapping from feature space to input space using conditional diffusion models](https://arxiv.org/abs/2505.21032).
 
 ## 📚 Citation
 
 If you find our work helpful, please cite our paper:
 
 ```bibtex
-TODO
+@misc{neukirch2025featinvspatiallyresolvedmapping,
+title={FeatInv: Spatially resolved mapping from feature space to input space using conditional diffusion models}, 
+author={Nils Neukirch and Johanna Vielhaben and Nils Strodthoff},
+year={2025},
+eprint={2505.21032},
+archivePrefix={arXiv},
+primaryClass={cs.CV},
+url={https://arxiv.org/abs/2505.21032}, 
+}
 ```
 
 ## 🖼️ Example
-![](./assets/highlight.png)
+![](./assets/highlight.png "FeatInv overview")
 
 ## 🚀 Getting Started
 

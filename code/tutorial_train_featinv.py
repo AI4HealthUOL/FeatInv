@@ -94,7 +94,7 @@ learning_rate = 1e-5
 sd_locked = True
 only_mid_control = False
 
-# First use cpu to load models. Pytorch Lightning will automatically move it to GPUs.
+# Loading model
 model = create_model('/models/cldm_featinv_convnext.yaml').cpu()
 model.load_state_dict(load_state_dict(resume_path, location='cpu'))
 model.learning_rate = learning_rate

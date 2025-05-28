@@ -6,7 +6,7 @@ This project based on [ControlNet](https://github.com/lllyasviel/ControlNet) inc
 
 ### Modified Files
 
-- `cldm/cldm.py`: Adjusted the hint input to support FeatInv requirements.
+- `cldm/cldm.py`: Adjusted the hint input to support feature maps.
 - `cldm/logger.py`: Updated logging behavior to align with FeatInv workflows.
 
 ### New Files
@@ -14,5 +14,5 @@ This project based on [ControlNet](https://github.com/lllyasviel/ControlNet) inc
 - `featinv_imagenet_val_images_convnext.py`: Script for generating reconstructed images from ImageNet validation samples.
 - `featinv_reconstructor_convnext.py`: Handles input reconstruction tasks as part of the FeatInv system.
 - `gradio_featinv_convnext.py`: Gradio interface for testing FeatInv using a ConvNeXt backbone.
-- `tool_add_control_featinv.py`: Script to create and prepare models necessary for FeatInv.
-- `tutorial_train_featinv.py`: Training script to train the FeatInv model based on the ControlNet architecture.
+- `tool_add_control_featinv.py`: Script to create and prepare the FeatInv model.
+- `tutorial_train_featinv.py`: Training script to train the FeatInv model with ConvNeXt backbone.

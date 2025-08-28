@@ -16,17 +16,6 @@ from ldm.modules.diffusionmodules.util import (
 )
 
 model = create_model('/models/cldm_featinv_convnext.yaml')
-hint_channels = 1024
-intermediate_channels = 512
-model.control_model.input_hint_block.block = TimestepEmbedSequential(
-    nn.Upsample(size=(32, 32), mode='bilinear'),
-    conv_nd(model.control_model.dims, hint_channels, intermediate_channels, 3, padding=1),
-    nn.SiLU(),
-    conv_nd(model.control_model.dims, intermediate_channels, intermediate_channels, 3, padding=1),
-    nn.SiLU(),
-    zero_module(
-        conv_nd(model.control_model.dims, intermediate_channels, model.control_model.model_channels, 3, padding=1)),
-)
 model.load_state_dict(load_state_dict('./control_featinv_convnext_fin.ckpt', location='cpu'))
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = model.to(device)
